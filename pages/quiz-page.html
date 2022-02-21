@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - o - Mania</title>
+    <link rel="stylesheet" href="https://argon-css.netlify.app/components/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="w-full h-20 shadow bg-grey-800 fixed z-50">
+        <div class="flex justify-around align-items-center h-full w-full">
+            <!-- logo -->
+            <div class="flex justify-center align-items-center">
+                <a href="/index.html">
+                    <h5
+                        class="h5 cursor-pointer mr-10 text-fuchsia-500 logo text-sm italic inline-flex justify-center align-items-center">
+                        Quiz - o - mania
+                    </h5>
+                </a>
+                <a href="/index.html">
+                    <h6 class="h6 mr-6 cursor-pointer text-white text-hover-fuchsia-500"> Home </h6>
+                </a>
+                <a href="/pages/quiz-page.html">
+                    <h6 class="h6 cursor-pointer text-white text-hover-fuchsia-500"> Quizzes </h6>
+                </a>
+            </div>
+            <!-- logo -->
+
+            <!-- searchbar -->
+            <form class="search__bar__container ">
+                <input type="text" class="search__bar bg-grey-700" placeholder="Search">
+                <a href="#"><i class="fas fa-search search__icon text-fuchsia-500"></i></a>
+            </form>
+            <!-- searchbar -->
+
+
+            <!-- icons (profile) -->
+            <div class="flex justify-center align-items-center">
+
+                <a href="">
+                    <button style="background: transparent;"
+                        class="btn flex flex-col text-fuchsia-500 text-hover-fuchsia-400 tooltip">
+                        <span><i class="text-lg fas fa-user "></i> </span>
+
+                        <span style="text-transform: none;" class="tooltip-text">Profile</span>
+
+                    </button>
+                </a>
+
+                <a href="#" class="btn btn-solid-fuchsia text-white ml-5">Login</a>
+            </div>
+            <!-- icons (profile) -->
+        </div>
+    </header>
+    <!-- header -->
+
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+
+
+
+    <!-- main -->
+    <main style="top: 5rem; min-height: 100vh" class="relative w-full  flex justify-center align-items-center">
+
+        <div class="flex flex-col justify-center">
+            <div class="flex w-full justify-start">
+                <div class="flex justify-center align-items-center">
+                    <div class="text-xl text-black mr-3">Sort By :</div>
+                    <div class="custom-select">
+                        <select class="bg-fuchsia-500 text-white text-xl">
+                            <option selected disabled>Choose a Quiz Category</option>
+                            <option value="">Javascript</option>
+                            <option value="">CSS</option>
+                            <option value="">React</option>
+                            <option value="">HTML</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div style="gap: 3rem; max-width: 980px;" class="grid-cols-3 grid p-20">
+                <div class="bg-regal-blue-dark rounded shadow-lg h-min">
+                    <div class="h-full  flex flex-col">
+                        <div class="badge-container">
+                            <span
+                                class="absolute font-bold card-badge badge bg-fuchsia-500 text-white bg-hover-fuchsia-300">New
+                                quiz</span>
+                            <div class="p-5">
+                                <img class="img-responsive" src="https://picsum.photos/500" alt="" />
+                            </div>
+                            <button style="background-color: rgba(255, 255, 255, 0.596);" class="btn-close"></button>
+
+                        </div>
+                        <div class="p-5">
+                            <h4 class="h4 font-normal text-lg subtitle1">
+                                <a class="text-black">Some Title</a>
+                            </h4>
+                            <p class="body1 text-sm font-light mb-4 text-black">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+                                possimus nostrum!
+                            </p>
+                            <hr class="mb-3" />
+
+                            <div class="flex justify-between">
+                                <a href="#" class="btn btn-solid-fuchsia text-white">Play Quiz</a>
+
+                                <a onclick="openModal()" id=" modalBtn" class="btn btn-link-fuchsia">Rules</a>
+
+                                <div id="modal" style="z-index: 30;" class="modal">
+                                    <div class="modal-content bg-white">
+                                        <div
+                                            class="modal-header flex justify-between align-items-center bg-grey-800 text-white p-5">
+                                            <h4 class="h4 text-lg">Quiz Rules</h4>
+                                            <span onclick="closeModal()"
+                                                class="modal-close text-rose-500 text-hover-rose-300">×</span>
+                                        </div>
+                                        <div class="modal-body p-5">
+                                            <p>Some rules in the Modal Body</p>
+                                            <p>Some other rules...</p>
+                                            <p>Some rules in the Modal Body</p>
+                                            <p>Some other rules...</p>
+                                            <p>Some rules in the Modal Body</p>
+                                            <p>Some other rules...</p>
+                                            <p>Some rules in the Modal Body</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-regal-blue-dark rounded shadow-lg h-min">
+                    <div class="h-full  flex flex-col">
+                        <div class="badge-container">
+                            <span
+                                class="absolute font-bold card-badge badge bg-fuchsia-500 text-white bg-hover-fuchsia-300">New
+                                quiz</span>
+                            <div class="p-5">
+                                <img class="img-responsive" src="https://picsum.photos/500" alt="" />
+                            </div>
+                            <button style="background-color: rgba(255, 255, 255, 0.596);" class="btn-close"></button>
+
+                        </div>
+                        <div class="p-5">
+                            <h4 class="h4 font-normal text-lg subtitle1">
+                                <a class="text-black">Some Title</a>
+                            </h4>
+                            <p class="body1 text-sm font-light mb-4 text-black">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+                                possimus nostrum!
+                            </p>
+                            <hr class="mb-3" />
+
+                            <div class="flex justify-between">
+                                <a href="#" class="btn btn-solid-fuchsia text-white">Play Quiz</a>
+
+                                <a onclick="openModal()" id=" modalBtn" class="btn btn-link-fuchsia">Rules</a>
+
+                                <div id="modal" style="z-index: 30;" class="modal">
+                                    <div class="modal-content bg-white">
+                                        <div
+                                            class="modal-header flex justify-between align-items-center bg-grey-800 text-white p-5">
+                                            <h4 class="h4 text-lg">Quiz Rules</h4>
+                                            <span onclick="closeModal()"
+                                                class="modal-close text-rose-500 text-hover-rose-300">×</span>
+                                        </div>
+                                        <div class="modal-body p-5">
+                                            <p>Some rules in the Modal Body</p>
+                                            <p>Some other rules...</p>
+                                            <p>Some rules in the Modal Body</p>
+                                            <p>Some other rules...</p>
+                                            <p>Some rules in the Modal Body</p>
+                                            <p>Some other rules...</p>
+                                            <p>Some rules in the Modal Body</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-regal-blue-dark rounded shadow-lg h-min">
+                    <div class="h-full  flex flex-col">
+                        <div class="badge-container">
+                            <span
+                                class="absolute font-bold card-badge badge bg-fuchsia-500 text-white bg-hover-fuchsia-300">New
+                                quiz</span>
+                            <div class="p-5">
+                                <img class="img-responsive" src="https://picsum.photos/500" alt="" />
+                            </div>
+                            <button style="background-color: rgba(255, 255, 255, 0.596);" class="btn-close"></button>
+
+                        </div>
+                        <div class="p-5">
+                            <h4 class="h4 font-normal text-lg subtitle1">
+                                <a class="text-black">Some Title</a>
+                            </h4>
+                            <p class="body1 text-sm font-light mb-4 text-black">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+                                possimus nostrum!
+                            </p>
+                            <hr class="mb-3" />
+
+                            <div class="flex justify-between">
+                                <a href="#" class="btn btn-solid-fuchsia text-white">Play Quiz</a>
+
+                                <a onclick="openModal()" id=" modalBtn" class="btn btn-link-fuchsia">Rules</a>
+
+                                <div id="modal" style="z-index: 30;" class="modal">
+                                    <div class="modal-content bg-white">
+                                        <div
+                                            class="modal-header flex justify-between align-items-center bg-grey-800 text-white p-5">
+                                            <h4 class="h4 text-lg">Quiz Rules</h4>
+                                            <span onclick="closeModal()"
+                                                class="modal-close text-rose-500 text-hover-rose-300">×</span>
+                                        </div>
+                                        <div class="modal-body p-5">
+                                            <p>Some rules in the Modal Body</p>
+                                            <p>Some other rules...</p>
+                                            <p>Some rules in the Modal Body</p>
+                                            <p>Some other rules...</p>
+                                            <p>Some rules in the Modal Body</p>
+                                            <p>Some other rules...</p>
+                                            <p>Some rules in the Modal Body</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-regal-blue-dark rounded shadow-lg h-min">
+                    <div class="h-full  flex flex-col">
+                        <div class="badge-container">
+                            <span
+                                class="absolute font-bold card-badge badge bg-fuchsia-500 text-white bg-hover-fuchsia-300">New
+                                quiz</span>
+                            <div class="p-5">
+                                <img class="img-responsive" src="https://picsum.photos/500" alt="" />
+                            </div>
+                            <button style="background-color: rgba(255, 255, 255, 0.596);" class="btn-close"></button>
+
+                        </div>
+                        <div class="p-5">
+                            <h4 class="h4 font-normal text-lg subtitle1">
+                                <a class="text-black">Some Title</a>
+                            </h4>
+                            <p class="body1 text-sm font-light mb-4 text-black">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+                                possimus nostrum!
+                            </p>
+                            <hr class="mb-3" />
+
+                            <div class="flex justify-between">
+                                <a href="#" class="btn btn-solid-fuchsia text-white">Play Quiz</a>
+
+                                <a onclick="openModal()" id=" modalBtn" class="btn btn-link-fuchsia">Rules</a>
+
+                                <div id="modal" style="z-index: 30;" class="modal">
+                                    <div class="modal-content bg-white">
+                                        <div
+                                            class="modal-header flex justify-between align-items-center bg-grey-800 text-white p-5">
+                                            <h4 class="h4 text-lg">Quiz Rules</h4>
+                                            <span onclick="closeModal()"
+                                                class="modal-close text-rose-500 text-hover-rose-300">×</span>
+                                        </div>
+                                        <div class="modal-body p-5">
+                                            <p>Some rules in the Modal Body</p>
+                                            <p>Some other rules...</p>
+                                            <p>Some rules in the Modal Body</p>
+                                            <p>Some other rules...</p>
+                                            <p>Some rules in the Modal Body</p>
+                                            <p>Some other rules...</p>
+                                            <p>Some rules in the Modal Body</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- main -->
+
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+
+    <!-- footer -->
+    <footer style="bottom: 0"
+        class="relative flex flex-col h-44 justify-center align-items-center w-full p-5 z-50 bg-fuchsia-100">
+        <div class="text-grey-700">
+            Made with
+            <span class="text-fuchsia-700 font-bold ml-1 mr-1">&lt;/&gt; </span> by
+            <a href="https://github.com/VedanthB" style="padding: 0; text-transform: none"
+                class="ml-1 btn btn-link-fuchsia">vedanth</a>
+        </div>
+        <div class="flex mt-3 align-items-center justify-center">
+            <a href="https://github.com/VedanthB">
+                <i class="fab fa-github mr-2 text-fuchsia-700"></i>
+            </a>
+            <a href="https://twitter.com/vedanth_X0X0">
+                <i class="fab fa-twitter mr-2 text-fuchsia-700"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/vedanth-bora/">
+                <i class="fab fa-linkedin mr-2 text-fuchsia-700"></i>
+            </a>
+            <a href="https://dev.to/vedanthb">
+                <i class="fab fa-dev text-fuchsia-700"></i>
+            </a>
+        </div>
+        <div class="text-grey-700 mt-3">
+            Designed using
+            <a href="https://argon-css.netlify.app/" style="padding: 0; text-transform: none"
+                class="ml-1 btn btn-link-fuchsia">Argon CSS</a>
+        </div>
+
+    </footer>
+    <!-- footer -->
+
+    <script>
+        // / Get the modal
+        var modal = document.getElementById("modal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("modalBtn");
+
+        // // Get the  element that closes the modal
+        var span = document.querySelector("modal-close");
+
+        // When the user clicks the button, open the modal
+        function openModal() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on  (x), close the modal
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+</body>
+
+</html>
