@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - o - Mania</title>
+    <link rel="stylesheet" href="https://argon-css.netlify.app/components/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="w-full h-20 shadow bg-grey-800 fixed z-50">
+        <div class="flex justify-around align-items-center h-full w-full">
+            <!-- logo -->
+            <div class="flex justify-center align-items-center">
+                <a href="/index.html">
+                    <h5
+                        class="h5 cursor-pointer mr-10 text-fuchsia-500 logo text-sm italic inline-flex justify-center align-items-center">
+                        Quiz - o - mania
+                    </h5>
+                </a>
+                <a href="/index.html">
+                    <h6 class="h6 mr-6 cursor-pointer text-white text-hover-fuchsia-500"> Home </h6>
+                </a>
+                <a href="/pages/quiz-page.html">
+                    <h6 class="h6 cursor-pointer text-white text-hover-fuchsia-500"> Quizzes </h6>
+                </a>
+            </div>
+            <!-- logo -->
+
+            <!-- searchbar -->
+            <form class="search__bar__container ">
+                <input type="text" class="search__bar bg-grey-700" placeholder="Search">
+                <a href="#"><i class="fas fa-search search__icon text-fuchsia-500"></i></a>
+            </form>
+            <!-- searchbar -->
+
+
+            <!-- icons (profile) -->
+            <div class="flex justify-center align-items-center">
+
+                <a href="">
+                    <button style="background: transparent;"
+                        class="btn flex flex-col text-fuchsia-500 text-hover-fuchsia-400 tooltip">
+                        <span><i class="text-lg fas fa-user "></i> </span>
+
+                        <span style="text-transform: none;" class="tooltip-text">Profile</span>
+
+                    </button>
+                </a>
+
+                <a href="#" class="btn btn-solid-fuchsia text-white ml-5">Login</a>
+            </div>
+            <!-- icons (profile) -->
+        </div>
+    </header>
+    <!-- header -->
+
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+
+
+
+    <!-- main -->
+    <main style="top: 5rem; min-height: 100vh" class="relative w-full">
+
+        <div style="max-width: 980px; margin: auto" class="w-full">
+            <h3 class="text-4xl font-normal text-center text-black underline">JavaScript MCQ Result</h3>
+
+            <div class="spacer-3rem"></div>
+            <div class="spacer-3rem"></div>
+
+            <div class="flex justify-between align-items-center">
+                <a href="/pages/quiz-page.html" class="btn shadow-md btn-outline-fuchsia">Back to Quizzes</a>
+
+                <div class="flex justify-center align-items-center">
+                    <h3 class="h3 inline-flex mr-5">Score</h3>
+                    <h3 class="h3 font-bold inline-flex text-green-500">3</h3>
+                </div>
+
+            </div>
+
+            <div class="spacer-3rem"></div>
+            <div class="spacer-3rem"></div>
+
+
+
+            <div class="question-wrapper">
+                <div class="flex justify-between align-items-center mb-10">
+                    <div class="flex justify-center align-items-center">
+                        <h6 class="mr-3 text-lg text-fuchsia-500 font-bold">Question:</h6>
+                        <h6 class="text-lg font-normal">1/5</h6>
+                    </div>
+
+                    <div class="flex justify-center align-items-center">
+                        <h6 class="mr-3 text-lg font-bold text-fuchsia-500">Score:</h6>
+                        <h6 class="text-lg font-normal">0</h6>
+                    </div>
+                </div>
+
+                <h5 class="text-3xl font-normal mb-10">1. Javascript is an _______ language?</h5>
+
+                <div style="gap: 1rem" class="flex flex-col">
+                    <div style="display:block" class="btn shadow-md btn-solid-green  text-center">Object
+                        Oriented
+                    </div>
+                    <div style="display:block" class="btn shadow-md btn-outline-fuchsia">Object Based</div>
+                    <div style="display:block" class="btn shadow-md btn-outline-fuchsia">Procedural</div>
+                    <div style="display:block" class="btn shadow-md btn-outline-fuchsia">None of the above</div>
+                </div>
+            </div>
+            <div class="spacer-3rem"></div>
+
+            <div class="alert-box bg-green-200 text-green-800 text-lg">
+                <span> <span><i class="alert-icon fas fa-check-circle"></i></span> </span>
+                Whoohoo, you are correct.
+            </div>
+
+            <div class="spacer-3rem"></div>
+            <div class="spacer-3rem"></div>
+            <div class="spacer-3rem"></div>
+
+
+            <div class="question-wrapper">
+                <div class="flex justify-between align-items-center mb-10">
+                    <div class="flex justify-center align-items-center">
+                        <h6 class="mr-3 text-lg text-fuchsia-500 font-bold">Question:</h6>
+                        <h6 class="text-lg font-normal">2/5</h6>
+                    </div>
+
+                    <div class="flex justify-center align-items-center">
+                        <h6 class="mr-3 text-lg font-bold text-fuchsia-500">Score:</h6>
+                        <h6 class="text-lg font-normal">0</h6>
+                    </div>
+                </div>
+
+                <h5 class="text-3xl font-normal mb-10">2. Which of the following keywords is used to define a variable
+                    in Javascript?
+                </h5>
+
+                <div style="gap: 1rem" class="flex flex-col">
+                    <div style="display:block" class="btn shadow-md btn-outline-fuchsia text-center">var
+                    </div>
+                    <div style="display:block" class="btn shadow-md btn-outline-fuchsia">let</div>
+                    <div style="display:block" class="btn shadow-md btn-solid-green">Both A And B</div>
+                    <div style="display:block" class="btn shadow-md btn-outline-fuchsia">None of the above</div>
+                </div>
+            </div>
+            <div class="spacer-3rem"></div>
+
+            <div class="alert-box bg-green-200 text-green-800 text-lg">
+                <span> <span><i class="alert-icon fas fa-check-circle"></i></span> </span>
+                Whoohoo, you are correct.
+            </div>
+            <div class="spacer-3rem"></div>
+            <div class="spacer-3rem"></div>
+            <div class="spacer-3rem"></div>
+
+            <div class="question-wrapper">
+                <div class="flex justify-between align-items-center mb-10">
+                    <div class="flex justify-center align-items-center">
+                        <h6 class="mr-3 text-lg text-fuchsia-500 font-bold">Question:</h6>
+                        <h6 class="text-lg font-normal">3/5</h6>
+                    </div>
+
+                    <div class="flex justify-center align-items-center">
+                        <h6 class="mr-3 text-lg font-bold text-fuchsia-500">Score:</h6>
+                        <h6 class="text-lg font-normal">0</h6>
+                    </div>
+                </div>
+
+                <h5 class="text-3xl font-normal mb-10"> 3.
+                    Which of the following methods is used to access HTML elements using Javascript?
+                </h5>
+
+                <div style="gap: 1rem" class="flex flex-col">
+                    <div style="display:block" class="btn shadow-md btn-solid-green text-center">Both B and C
+                    </div>
+                    <div style="display:block" class="btn shadow-md btn-outline-fuchsia">getElementById()</div>
+                    <div style="display:block" class="btn shadow-md btn-outline-fuchsia">getElementsByClassName()</div>
+                    <div style="display:block" class="btn shadow-md btn-outline-fuchsia">None of the above</div>
+                </div>
+            </div>
+            <div class="spacer-3rem"></div>
+
+            <div class="alert-box bg-green-200 text-green-800 text-lg">
+                <span> <span><i class="alert-icon fas fa-check-circle"></i></span> </span>
+                Whoohoo, you are correct.
+            </div>
+
+            <div class="spacer-3rem"></div>
+            <div class="spacer-3rem"></div>
+            <div class="spacer-3rem"></div>
+
+            <div class="question-wrapper">
+                <div class="flex justify-between align-items-center mb-10">
+                    <div class="flex justify-center align-items-center">
+                        <h6 class="mr-3 text-lg text-fuchsia-500 font-bold">Question:</h6>
+                        <h6 class="text-lg font-normal">4/5</h6>
+                    </div>
+
+                    <div class="flex justify-center align-items-center">
+                        <h6 class="mr-3 text-lg font-bold text-fuchsia-500">Score:</h6>
+                        <h6 class="text-lg font-normal">0</h6>
+                    </div>
+                </div>
+
+                <h5 class="text-3xl font-normal mb-10">4. Upon encountering empty statements, what does the Javascript
+                    Interpreter
+                    do?</h5>
+
+                <div style="gap: 1rem" class="flex flex-col">
+                    <div style="display:block" class="btn shadow-md btn-outline-fuchsia text-center">Throws an error
+                    </div>
+                    <div style="display:block" class="btn shadow-md btn-solid-green">Ignores the statements</div>
+                    <div style="display:block" class="btn shadow-md btn-outline-fuchsia">Gives a warning</div>
+                    <div style="display:block" class="btn shadow-md btn-solid-red">None of the above</div>
+                </div>
+            </div>
+            <div class="spacer-3rem"></div>
+
+            <div class="alert-box bg-rose-200 text-rose-800 text-lg">
+                <span><i class="alert-icon fas fa-exclamation-triangle"></i> </span>
+                Oops, you are wrong. No point for this one.
+            </div>
+
+            <div class="spacer-3rem"></div>
+            <div class="spacer-3rem"></div>
+            <div class="spacer-3rem"></div>
+
+
+            <div class="question-wrapper">
+                <div class="flex justify-between align-items-center mb-10">
+                    <div class="flex justify-center align-items-center">
+                        <h6 class="mr-3 text-lg text-fuchsia-500 font-bold">Question:</h6>
+                        <h6 class="text-lg font-normal">5/5</h6>
+                    </div>
+
+                    <div class="flex justify-center align-items-center">
+                        <h6 class="mr-3 text-lg font-bold text-fuchsia-500">Score:</h6>
+                        <h6 class="text-lg font-normal">0</h6>
+                    </div>
+                </div>
+
+                <h5 class="text-3xl font-normal mb-10">5. Which of the following methods can be used to display data in
+                    some form
+                    using Javascript?</h5>
+
+                <div style="gap: 1rem" class="flex flex-col">
+                    <div style="display:block" class="btn shadow-md btn-outline-fuchsia text-center">document.write()
+                    </div>
+                    <div style="display:block" class="btn shadow-md btn-outline-fuchsia">console.log()</div>
+                    <div style="display:block" class="btn shadow-md btn-solid-red">window.alert()</div>
+                    <div style="display:block" class="btn shadow-md btn-solid-green">All of the above</div>
+                </div>
+            </div>
+            <div class="spacer-3rem"></div>
+
+            <div class="alert-box bg-rose-200 text-rose-800 text-lg">
+                <span><i class="alert-icon fas fa-exclamation-triangle"></i> </span>
+                Oops, you are wrong. No point for this one.
+            </div>
+
+            <div class="spacer-3rem"></div>
+            <div class="spacer-3rem"></div>
+
+            <div class="flex justify-center align-items-center">
+                <h3 class="h3 inline-flex mr-5">Score</h3>
+                <h3 class="h3 font-bold inline-flex text-green-500">3</h3>
+            </div>
+        </div>
+
+    </main>
+    <!-- main -->
+
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+    <div class="spacer-3rem"></div>
+
+
+    <!-- footer -->
+    <footer style="bottom: 0"
+        class="relative flex flex-col h-44 justify-center align-items-center w-full p-5 z-50 bg-fuchsia-100">
+        <div class="text-grey-700">
+            Made with
+            <span class="text-fuchsia-700 font-bold ml-1 mr-1">&lt;/&gt; </span> by
+            <a href="https://github.com/VedanthB" style="padding: 0; text-transform: none"
+                class="ml-1 btn btn-link-fuchsia">vedanth</a>
+        </div>
+        <div class="flex mt-3 align-items-center justify-center">
+            <a href="https://github.com/VedanthB">
+                <i class="fab fa-github mr-2 text-fuchsia-700"></i>
+            </a>
+            <a href="https://twitter.com/vedanth_X0X0">
+                <i class="fab fa-twitter mr-2 text-fuchsia-700"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/vedanth-bora/">
+                <i class="fab fa-linkedin mr-2 text-fuchsia-700"></i>
+            </a>
+            <a href="https://dev.to/vedanthb">
+                <i class="fab fa-dev text-fuchsia-700"></i>
+            </a>
+        </div>
+        <div class="text-grey-700 mt-3">
+            Designed using
+            <a href="https://argon-css.netlify.app/" style="padding: 0; text-transform: none"
+                class="ml-1 btn btn-link-fuchsia">Argon CSS</a>
+        </div>
+
+    </footer>
+    <!-- footer -->
+</body>
+
+</html>
