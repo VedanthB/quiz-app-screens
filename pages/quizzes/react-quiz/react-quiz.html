@@ -82,10 +82,27 @@
             <div class="spacer-3rem"></div>
             <div class="flex justify-between align-items-center">
                 <a href="#" class="btn btn-sm btn-solid-fuchsia shadow-sm text-white text-center">Check Score</a>
-                <a href="#" class="btn btn-sm btn-solid-fuchsia shadow-sm text-white text-center">
+                <a onclick="openModal()" class="btn btn-sm btn-solid-fuchsia shadow-sm text-white text-center">
                     Quiz Rules / About Quiz
                 </a>
 
+                <div id="modal" style="z-index: 30;" class="modal">
+                    <div class="modal-content bg-white">
+                        <div class="modal-header flex justify-between align-items-center bg-grey-800 text-white p-5">
+                            <h4 class="h4 text-lg">Quiz Rules</h4>
+                            <span onclick="closeModal()" class="modal-close text-rose-500 text-hover-rose-300">×</span>
+                        </div>
+                        <div class="modal-body p-5">
+                            <p>Some rules in the Modal Body</p>
+                            <p>Some other rules...</p>
+                            <p>Some rules in the Modal Body</p>
+                            <p>Some other rules...</p>
+                            <p>Some rules in the Modal Body</p>
+                            <p>Some other rules...</p>
+                            <p>Some rules in the Modal Body</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="spacer-3rem"></div>
@@ -287,6 +304,34 @@
 
     </footer>
     <!-- footer -->
+
+    <script>
+        // / Get the modal
+        var modal = document.getElementById("modal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("modalBtn");
+
+        // // Get the  element that closes the modal
+        var span = document.querySelector("modal-close");
+
+        // When the user clicks the button, open the modal
+        function openModal() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on  (x), close the modal
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
 </body>
 
 </html>
