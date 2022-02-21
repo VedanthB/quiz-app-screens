@@ -21,7 +21,7 @@
 <body>
     <!-- header -->
     <header class="w-full h-20 shadow bg-grey-800 fixed z-50">
-        <nav class="flex justify-around align-items-center h-full w-full">
+        <div class="flex justify-around align-items-center h-full w-full">
             <!-- logo -->
             <div class="flex justify-center align-items-center">
                 <a href="/index.html">
@@ -51,9 +51,8 @@
             <div class="flex justify-center align-items-center">
 
                 <a href="">
-                    <a style="background: transparent;"
-                        class="btn flex flex-col text-fuchsia-500 text-hover-fuchsia-400 tooltip"
-                        href="/pages/profile-page/profile-page.html">
+                    <a style="background: transparent;" href="/pages/profile-page/profile-page.html"
+                        class="btn flex flex-col text-fuchsia-500 text-hover-fuchsia-400 tooltip">
                         <span><i class="text-lg fas fa-user "></i> </span>
 
                         <span style="text-transform: none;" class="tooltip-text">Profile</span>
@@ -64,28 +63,57 @@
                 <a href="/pages/auth-pages/login.html" class="btn btn-solid-fuchsia text-white ml-5">Login</a>
             </div>
             <!-- icons (profile) -->
-        </nav>
+        </div>
     </header>
     <!-- header -->
 
     <!-- main -->
-    <main style="top: 5rem; min-height: 100vh" class="relative w-full  flex justify-center align-items-center">
-        <div>
-            <div class="flex flex-col justify-center mb-10">
-                <h2 class="text-8xl mb-10 hero-heading">Quiz - o - Mania</h2>
-                <h5 class="text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis dicta rem, in
-                    fugit porro
-                    blanditiis
-                    <br>
-                    quo et quae minima delectus atque cupiditate? Eveniet suscipit distinctio facilis nam nisi vel
-                    dignissimos.
-                </h5>
+    <main style="top: 5rem; min-height: 100vh" class="relative w-full flex flex-col">
+        <div class="spacer-3rem"></div>
+        <div class="spacer-3rem"></div>
+        <h3 class="text-4xl font-normal text-center text-black underline">My account</h3>
+
+        <div class="spacer-3rem"></div>
+        <div class="spacer-3rem"></div>
+
+        <div style="max-width: 980px; margin: 0 auto">
+            <div class="flex flex-col p-10 shadow-xl">
+                <div class="avatar avatar-lg avatar-text bg-teal-500 text-white mb-10">AS</div>
+
+                <div class="flex justify-start align-items-center ">
+                    <h6 class="text-xl font-semibold mr-5 mb-5">Email Address : </h6>
+                    <h6 class="text-xl font-normal mr-5 mb-5">admin@admin.com </h6>
+
+
+                </div>
+                <div class="flex justify-start align-items-center">
+                    <h6 class="text-xl font-semibold mr-5 mb-5">Full Name : </h6>
+                    <h6 class="text-xl font-normal  mb-5">admin singh</h6>
+
+                </div>
+
+
+                <div class="flex justify-center align-items-center mt-5">
+                    <a onclick="openModal()" class="btn btn-link-fuchsia">Edit Information</a>
+
+                    <div id="modal" style="z-index: 30;" class="modal">
+                        <div class="modal-content bg-white">
+                            <div
+                                class="modal-header flex justify-between align-items-center bg-grey-800 text-white p-5">
+                                <h4 class="h4 text-lg">User Info</h4>
+                                <span onclick="closeModal()"
+                                    class="modal-close text-rose-500 text-hover-rose-300">×</span>
+                            </div>
+                            <div class="modal-body p-5">
+                                edit info in here
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-
-            <a href="/pages/quiz-page.html" class="btn btn-solid-fuchsia text-white btn-lg">Browse Quizzes</a>
-
         </div>
+
     </main>
     <!-- main -->
 
@@ -120,6 +148,34 @@
 
     </footer>
     <!-- footer -->
+
+    <script>
+        // / Get the modal
+        var modal = document.getElementById("modal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("modalBtn");
+
+        // // Get the  element that closes the modal
+        var span = document.querySelector("modal-close");
+
+        // When the user clicks the button, open the modal
+        function openModal() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on  (x), close the modal
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
 </body>
 
 </html>
