@@ -76,6 +76,7 @@
     <main style="top: 5rem; min-height: 100vh" class="relative w-full  flex justify-center align-items-center">
 
         <div class="flex flex-col justify-center">
+            <!-- dropdown for sorting quiz   -->
             <div class="flex w-full justify-start">
                 <div class="flex justify-center align-items-center">
                     <div class="text-xl text-black mr-3">Sort By :</div>
@@ -90,8 +91,9 @@
                     </div>
                 </div>
             </div>
+            <!-- quizzes -->
             <div style="gap: 3rem; max-width: 980px;" class="grid-cols-3 grid p-20">
-                <div class="bg-regal-blue-dark rounded shadow-lg h-min">
+                <div class="rounded shadow-lg h-min">
                     <div class="h-full  flex flex-col">
                         <div class="badge-container">
                             <span
@@ -254,7 +256,8 @@
                             <hr class="mb-3" />
 
                             <div class="flex justify-between">
-                                <a href="#" class="btn btn-solid-fuchsia text-white">Play Quiz</a>
+                                <a href="/pages/quizzes/react-quiz/react-quiz.html"
+                                    class="btn btn-solid-fuchsia text-white">Play Quiz</a>
 
                                 <a onclick="openModal()" id=" modalBtn" class="btn btn-link-fuchsia">Rules</a>
 
