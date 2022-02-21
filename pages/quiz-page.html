@@ -67,15 +67,11 @@
     </header>
     <!-- header -->
 
-    <div class="spacer-3rem"></div>
-    <div class="spacer-3rem"></div>
-
-
-
     <!-- main -->
     <main style="top: 5rem; min-height: 100vh" class="relative w-full  flex justify-center align-items-center">
 
         <div class="flex flex-col justify-center">
+            <!-- dropdown for sorting quiz   -->
             <div class="flex w-full justify-start">
                 <div class="flex justify-center align-items-center">
                     <div class="text-xl text-black mr-3">Sort By :</div>
@@ -90,8 +86,9 @@
                     </div>
                 </div>
             </div>
+            <!-- quizzes -->
             <div style="gap: 3rem; max-width: 980px;" class="grid-cols-3 grid p-20">
-                <div class="bg-regal-blue-dark rounded shadow-lg h-min">
+                <div class="rounded shadow-lg h-min">
                     <div class="h-full  flex flex-col">
                         <div class="badge-container">
                             <span
@@ -105,16 +102,62 @@
                         </div>
                         <div class="p-5">
                             <h4 class="h4 font-normal text-lg subtitle1">
-                                <a class="text-black">Some Title</a>
+                                <a class="text-black">Javascript Quiz</a>
                             </h4>
-                            <p class="body1 text-sm font-light mb-4 text-black">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
-                                possimus nostrum!
-                            </p>
+
                             <hr class="mb-3" />
 
                             <div class="flex justify-between">
-                                <a href="#" class="btn btn-solid-fuchsia text-white">Play Quiz</a>
+                                <a href="/pages/quizzes/javascript-quiz/js-quiz-page.html"
+                                    class="btn btn-solid-fuchsia text-white">Play Quiz</a>
+
+                                <a onclick="openModal()" id=" modalBtn" class="btn  btn-link-fuchsia">Rules</a>
+
+                                <div id="modal" style="z-index: 30;" class="modal">
+                                    <div class="modal-content bg-white">
+                                        <div
+                                            class="modal-header flex justify-between align-items-center bg-grey-800 text-white p-5">
+                                            <h4 class="h4 text-lg">Quiz Rules</h4>
+                                            <span onclick="closeModal()"
+                                                class="modal-close text-rose-500 text-hover-rose-300">×</span>
+                                        </div>
+                                        <div class="modal-body p-5">
+                                            <p>Some rules in the Modal Body</p>
+                                            <p>Some other rules...</p>
+                                            <p>Some rules in the Modal Body</p>
+                                            <p>Some other rules...</p>
+                                            <p>Some rules in the Modal Body</p>
+                                            <p>Some other rules...</p>
+                                            <p>Some rules in the Modal Body</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded shadow-lg h-min">
+                    <div class="h-full  flex flex-col">
+                        <div class="badge-container">
+                            <span
+                                class="absolute font-bold card-badge badge bg-fuchsia-500 text-white bg-hover-fuchsia-300">New
+                                quiz</span>
+                            <div class="p-5">
+                                <img class="img-responsive" src="https://picsum.photos/500" alt="" />
+                            </div>
+                            <button style="background-color: rgba(255, 255, 255, 0.596);" class="btn-close"></button>
+
+                        </div>
+                        <div class="p-5">
+                            <h4 class="h4 font-normal text-lg subtitle1">
+                                <a class="text-black">CSS Quiz</a>
+                            </h4>
+
+                            <hr class="mb-3" />
+
+                            <div class="flex justify-between">
+                                <a href="/pages/quizzes/css-quiz/css-quiz-page.html"
+                                    class="btn btn-solid-fuchsia text-white">Play Quiz</a>
 
                                 <a onclick="openModal()" id=" modalBtn" class="btn btn-link-fuchsia">Rules</a>
 
@@ -141,7 +184,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-regal-blue-dark rounded shadow-lg h-min">
+
+                <div class="rounded shadow-lg h-min">
                     <div class="h-full  flex flex-col">
                         <div class="badge-container">
                             <span
@@ -155,116 +199,14 @@
                         </div>
                         <div class="p-5">
                             <h4 class="h4 font-normal text-lg subtitle1">
-                                <a class="text-black">Some Title</a>
+                                <a class="text-black">React Quiz</a>
                             </h4>
-                            <p class="body1 text-sm font-light mb-4 text-black">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
-                                possimus nostrum!
-                            </p>
+
                             <hr class="mb-3" />
 
                             <div class="flex justify-between">
-                                <a href="#" class="btn btn-solid-fuchsia text-white">Play Quiz</a>
-
-                                <a onclick="openModal()" id=" modalBtn" class="btn btn-link-fuchsia">Rules</a>
-
-                                <div id="modal" style="z-index: 30;" class="modal">
-                                    <div class="modal-content bg-white">
-                                        <div
-                                            class="modal-header flex justify-between align-items-center bg-grey-800 text-white p-5">
-                                            <h4 class="h4 text-lg">Quiz Rules</h4>
-                                            <span onclick="closeModal()"
-                                                class="modal-close text-rose-500 text-hover-rose-300">×</span>
-                                        </div>
-                                        <div class="modal-body p-5">
-                                            <p>Some rules in the Modal Body</p>
-                                            <p>Some other rules...</p>
-                                            <p>Some rules in the Modal Body</p>
-                                            <p>Some other rules...</p>
-                                            <p>Some rules in the Modal Body</p>
-                                            <p>Some other rules...</p>
-                                            <p>Some rules in the Modal Body</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-regal-blue-dark rounded shadow-lg h-min">
-                    <div class="h-full  flex flex-col">
-                        <div class="badge-container">
-                            <span
-                                class="absolute font-bold card-badge badge bg-fuchsia-500 text-white bg-hover-fuchsia-300">New
-                                quiz</span>
-                            <div class="p-5">
-                                <img class="img-responsive" src="https://picsum.photos/500" alt="" />
-                            </div>
-                            <button style="background-color: rgba(255, 255, 255, 0.596);" class="btn-close"></button>
-
-                        </div>
-                        <div class="p-5">
-                            <h4 class="h4 font-normal text-lg subtitle1">
-                                <a class="text-black">Some Title</a>
-                            </h4>
-                            <p class="body1 text-sm font-light mb-4 text-black">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
-                                possimus nostrum!
-                            </p>
-                            <hr class="mb-3" />
-
-                            <div class="flex justify-between">
-                                <a href="#" class="btn btn-solid-fuchsia text-white">Play Quiz</a>
-
-                                <a onclick="openModal()" id=" modalBtn" class="btn btn-link-fuchsia">Rules</a>
-
-                                <div id="modal" style="z-index: 30;" class="modal">
-                                    <div class="modal-content bg-white">
-                                        <div
-                                            class="modal-header flex justify-between align-items-center bg-grey-800 text-white p-5">
-                                            <h4 class="h4 text-lg">Quiz Rules</h4>
-                                            <span onclick="closeModal()"
-                                                class="modal-close text-rose-500 text-hover-rose-300">×</span>
-                                        </div>
-                                        <div class="modal-body p-5">
-                                            <p>Some rules in the Modal Body</p>
-                                            <p>Some other rules...</p>
-                                            <p>Some rules in the Modal Body</p>
-                                            <p>Some other rules...</p>
-                                            <p>Some rules in the Modal Body</p>
-                                            <p>Some other rules...</p>
-                                            <p>Some rules in the Modal Body</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-regal-blue-dark rounded shadow-lg h-min">
-                    <div class="h-full  flex flex-col">
-                        <div class="badge-container">
-                            <span
-                                class="absolute font-bold card-badge badge bg-fuchsia-500 text-white bg-hover-fuchsia-300">New
-                                quiz</span>
-                            <div class="p-5">
-                                <img class="img-responsive" src="https://picsum.photos/500" alt="" />
-                            </div>
-                            <button style="background-color: rgba(255, 255, 255, 0.596);" class="btn-close"></button>
-
-                        </div>
-                        <div class="p-5">
-                            <h4 class="h4 font-normal text-lg subtitle1">
-                                <a class="text-black">Some Title</a>
-                            </h4>
-                            <p class="body1 text-sm font-light mb-4 text-black">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
-                                possimus nostrum!
-                            </p>
-                            <hr class="mb-3" />
-
-                            <div class="flex justify-between">
-                                <a href="#" class="btn btn-solid-fuchsia text-white">Play Quiz</a>
+                                <a href="/pages/quizzes/react-quiz/react-quiz.html"
+                                    class="btn btn-solid-fuchsia text-white">Play Quiz</a>
 
                                 <a onclick="openModal()" id=" modalBtn" class="btn btn-link-fuchsia">Rules</a>
 
